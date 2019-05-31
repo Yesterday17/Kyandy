@@ -12,6 +12,8 @@ branches:
 
 before_install:
   - export TZ='Asia/Shanghai'
+  - git clone https://github.com/Yesterday17/ForestryMC.git --depth=1
+  - find ./ForestryMC -name "*.md" | xargs rm -rf
 
 install:
   - npm install
