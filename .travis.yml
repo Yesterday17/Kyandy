@@ -14,11 +14,10 @@ before_install:
   - export TZ='Asia/Shanghai'
 
 install:
-  - npm install -g gitbook-cli
-  - gitbook install
+  - npm install
 
 script:
-  - gitbook build
+  - npm run build
 
 after_script:
   - cd ./_book
