@@ -6,3 +6,6 @@ _book/
 
 # Logs
 *.log
+
+# Forestry Source
+ForestryMC/
