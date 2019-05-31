@@ -25,7 +25,7 @@ after_script:
   - git init
   - git config user.name "Yesterday17"
   - git config user.email "t@yesterday17.cn"
-  - kyandy.mmf.moe > CNAME
+  - echo kyandy.mmf.moe > CNAME
   - git add .
   - git commit -m "Update GitBook By TravisCI With Build $TRAVIS_BUILD_NUMBER"
   - git push --force --quiet "https://yesterday17:${CO_TOKEN}@${CO_REF}" master:master
