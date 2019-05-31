@@ -2,7 +2,7 @@
 home: true
 description: Forestry 源码详解的精神续作
 actionText: 开始阅读 →
-actionLink: /preface/
+actionLink: /book/preface/
 features:
   - title: 缓慢填坑
     details: 在各种期中/期末考试期间龟速更新，望周知。
