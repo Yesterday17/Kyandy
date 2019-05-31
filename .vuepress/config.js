@@ -2,7 +2,8 @@ module.exports = {
   title: "Kyandy",
   description: "歩き出すんだ、自分の軌跡になるから、止まらない。",
   dest: "./_book/",
-  serviceWorker: true,
+  plugins: ["@vuepress/back-to-top"],
+  theme: "kyandy",
   markdown: {
     lineNumbers: true
   },

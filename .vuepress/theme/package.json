@@ -1,0 +1,24 @@
+{
+  "name": "vuepress-theme-kyandy",
+  "version": "1.0.0-alpha.48",
+  "description": "VuePress theme for Project Kyandy.",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/Yesterday17/Kyandy",
+  "keywords": [
+    "documentation",
+    "vue",
+    "vuepress"
+  ],
+  "author": "Yesterday17",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yesterday17/Kyandy/issues"
+  },
+  "homepage": "https://kyandy.mmf.moe/",
+  "dependencies": {
+    "@vuepress/theme-default": "^1.0.0-alpha.48"
+  }
+}
