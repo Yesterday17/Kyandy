@@ -5,48 +5,49 @@
 ## 目录结构
 
 ForestryMC 的目录结构如下所示：
-!ForestryMC 的目录结构
 
 ```
-─forestry
-    ├─api
-    │  ├─apiculture
-    │  ├─arboriculture
-    │  ├─book
-    │  ├─circuits
-    │  ├─climate
-    │  ├─core
-    │  ├─farming
-    │  ├─food
-    │  ├─fuels
-    │  ├─genetics
-    │  ├─gui
-    │  ├─lepidopterology
-    │  ├─mail
-    │  ├─modulesW
-    │  ├─multiblock
-    │  ├─recipes
-    │  ├─storage
-    │  └─world
-    ├─apiculture
-    ├─arboriculture
-    ├─book
-    ├─climatology
-    ├─core
-    ├─cultivation
-    ├─database
-    ├─energy
-    ├─factory
-    ├─farming
-    ├─food
-    ├─greenhouse
-    ├─lepidopterology
-    ├─mail
-    ├─modules
-    ├─plugins
-    ├─sorting
-    ├─storage
-    └─worktable
+forestry
+   ├─api
+   │  ├─apiculture
+   │  ├─arboriculture
+   │  ├─book
+   │  ├─circuits
+   │  ├─climate
+   │  ├─core
+   │  ├─farming
+   │  ├─food
+   │  ├─fuels
+   │  ├─genetics
+   │  ├─gui
+   │  ├─lepidopterology
+   │  ├─mail
+   │  ├─modules
+   │  ├─multiblock
+   │  ├─recipes
+   │  ├─storage
+   │  └─world
+   ├─apiculture
+   ├─arboriculture
+   ├─book
+   ├─climatology
+   ├─core
+   ├─cultivation
+   ├─database
+   ├─energy
+   ├─factory
+   ├─farming
+   ├─food
+   ├─greenhouse
+   ├─lepidopterology
+   ├─mail
+   ├─modules
+   ├─plugins
+   ├─sorting
+   ├─storage
+   └─worktable
 ```
 
 ## Module 还是 Plugin？
+
+TODO

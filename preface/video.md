@@ -1,4 +1,4 @@
-# [数据删除]
+# 【数据删除】
 
 事实上，还有一些存在的痕迹并没有被消除，或者换句话说，我的意志使得它一直存在在那里。
 
@@ -8,4 +8,4 @@
 
 <black>不管怎么说，也是见证了我的青春啊</black>
 
-<black><a href="https://space.bilibili.com/5756570/channel/detail?cid=18472">シルシ</a></black>
+<black>[シルシ](https://space.bilibili.com/5756570/channel/detail?cid=18472)</black>

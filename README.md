@@ -1,22 +1,14 @@
-# Kyandy
-
-Kyandy 是 `Candy` 的某种奇怪写法，是 Forestry 源码详解的精神续作。
-
-<br>
-> 原来的东西呢？
-
-如果你指的是文字版，很遗憾，在阿里云服务器没有续费的前提下，几年前它就随着某昨的第一代 Wordpress 博客一起被献祭了。如果你当时看过 MCBBS 的某帖，还能看到它存在的些许痕迹。
-
-<br>
-> 视频呢？
-
-[[数据删除]](preface/video.md)
-
-<br>
-> 名字？
-
-<black>
-只要你单推 <a href="https://zh.moegirl.org/%E9%AB%98%E6%A1%A5%E6%9C%AA%E5%A5%88%E7%BE%8E">tkmn</a>，我们就是好朋友
-</black>
-<br>
-<black>其实之前根本决定不了名字的，然后翻歌单找到了水中糖www</black>
+---
+home: true
+description: Forestry 源码详解的精神续作
+actionText: 开始阅读 →
+actionLink: /preface/
+features:
+  - title: 缓慢填坑
+    details: 在各种期中/期末考试期间龟速更新，望周知。
+  - title: "【数据删除】"
+    details: 本文专注为PC端设计，文中充斥着大量hover后可见的<black>，请谨慎阅读。
+  - title: awsl
+    details: 如果文中出现"awsl"，"真好啊，她们真好啊"之类的话，请不要在意这些细节。
+footer: "歩き出すんだ、自分の軌跡になるから、止まらない。"
+---
