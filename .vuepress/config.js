@@ -36,14 +36,19 @@ module.exports = {
             ["/chapter-01/structure", "1.2 基本架构"],
             ["/chapter-01/yakusoku", "1.3 一些约定"]
           ]
+        },
+        {
+          title: "2. 模块的加载过程",
+          children: [
+            ["/chapter-02/module-and-container", "2.1 模块与 Container"],
+            ["/chapter-02/forestry-modules", "2.2 ForestryModules"],
+            ["/chapter-02/blank-forestry-module", "2.3 BlankForestryModule"],
+            ["/chapter-02/module-manager", "2.4 ModuleManager"]
+          ]
         }
-        // {
-        //   title: "2. core 模块",
-        //   children: [["", "2.1 简介"]]
-        // }
       ]
     },
-    displayAllHeaders: true,
+    // displayAllHeaders: true,
     lastUpdated: "最后更新"
   },
   evergreen: true
