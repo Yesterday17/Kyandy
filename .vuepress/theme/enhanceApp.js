@@ -1,5 +1,6 @@
-import APlayer from "@moefe/vue-aplayer";
-
 export default ({ Vue }) => {
-  Vue.use(APlayer);
+  if (typeof window !== "undefined") {
+    const { default: APlayer } = require("@moefe/vue-aplayer");
+    Vue.use(APlayer);
+  }
 };
