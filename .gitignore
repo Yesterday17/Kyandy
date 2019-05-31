@@ -1,0 +1,8 @@
+# Node modules
+node_modules
+
+# Generated files
+_book/
+
+# Logs
+*.log

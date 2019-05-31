@@ -1,0 +1,25 @@
+{
+  "title": "Kyandy",
+  "description": "歩き出すんだ、自分の軌跡になるから、止まらない。",
+  "author": "https://github.com/Yesterday17/Kyandy/graphs/contributors",
+  "plugins": [
+    "katex",
+    "splitter",
+    "expandable-chapters",
+    "anchor-navigation-ex",
+    "heimu"
+  ],
+  "pluginsConfig": {
+    "flow": {
+      "line-color": "red"
+    }
+  },
+  "links": {
+    "sidebar": {
+      "Yesterday17": "https://www.yesterday17.cn/"
+    },
+    "sharing": {
+      "twitter": "https://twitter.com/Yesterday17_P"
+    }
+  }
+}
