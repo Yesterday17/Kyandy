@@ -7,17 +7,26 @@
     "splitter",
     "expandable-chapters",
     "anchor-navigation-ex",
-    "heimu"
+    "uml",
+    "heimu",
+    "hide-published-with",
+    "github",
+    "copy-code-button",
+    "codeblock-filename",
+    "hints"
   ],
   "pluginsConfig": {
     "flow": {
       "line-color": "red"
+    },
+    "theme-default": {
+      "showLevel": true
+    },
+    "github": {
+      "url": "https://github.com/Yesterday17/Kyandy"
     }
   },
   "links": {
-    "sidebar": {
-      "Yesterday17": "https://www.yesterday17.cn/"
-    },
     "sharing": {
       "twitter": "https://twitter.com/Yesterday17_P"
     }
