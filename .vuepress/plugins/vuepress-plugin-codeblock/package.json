@@ -1,0 +1,11 @@
+{
+  "name": "vuepress-plugin-codeblock",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "author": "Yesterday17",
+  "license": "MIT",
+  "dependencies": {
+    "markdown-it-container": "^2.0.0",
+    "prismjs": "^1.16.0"
+  }
+}

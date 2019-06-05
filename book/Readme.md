@@ -15,3 +15,22 @@ Kyandy 是 `Candy` 的某种奇怪写法，是 Forestry 源码详解的精神续
 <black>只要你单推 [tkmn](https://zh.moegirl.org/%E9%AB%98%E6%A1%A5%E6%9C%AA%E5%A5%88%E7%BE%8E)，我们就是好朋友</black>
 
 <black>其实之前根本决定不了名字的，然后翻歌单找到了水中糖 www</black>
+
+<!--
+:::codeblock
+
+```json config
+{
+  "file": "Forestry.java",
+  "link": "/source/Forestry.html"
+}
+```
+
+<<< @/ForestryMC/src/main/java/forestry/Forestry.java
+
+```md comment{11}
+这里就是表明 `package` 是 forestry
+```
+
+:::
+-->

@@ -2,7 +2,17 @@ module.exports = {
   title: "Kyandy",
   description: "歩き出すんだ、自分の軌跡になるから、止まらない。",
   dest: "./_book/",
-  plugins: ["@vuepress/back-to-top"],
+  extraWatchFiles: [
+    "./book/config.js",
+    "./source/config.js",
+    "./book/*/toc.js"
+  ],
+  plugins: [
+    "@vuepress/back-to-top",
+    "smooth-scroll",
+    ["@vuepress/pwa", { updatePopup: true }],
+    require("./plugins/vuepress-plugin-codeblock/src/index.js")
+  ],
   theme: "kyandy",
   markdown: {
     lineNumbers: true
