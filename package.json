@@ -5,9 +5,11 @@
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.0.0-alpha.48",
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.48",
     "vuepress": "^1.0.0-alpha.48"
   },
   "dependencies": {
-    "@moefe/vue-aplayer": "^2.0.0-beta.5"
+    "@moefe/vue-aplayer": "^2.0.0-beta.5",
+    "vuepress-plugin-smooth-scroll": "^0.0.3"
   }
 }
