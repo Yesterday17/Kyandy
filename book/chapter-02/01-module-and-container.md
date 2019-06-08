@@ -110,7 +110,7 @@ public interface IForestryModule {
 	}
 ```
 
-在 `preInit` 阶段调用的 `runSetup`，只有当模块未被禁用(`disable`)时才会调用，与下面刚好相反。
+在 `SETUP` 阶段调用。只有当模块未被禁用(`disable`)时才会调用，与下面刚好相反。
 
 ```java
 	/**
@@ -122,7 +122,7 @@ public interface IForestryModule {
 	}
 ```
 
-在**模组加载阶段** `preInit` 阶段调用的 `runSetup`，只有当模块被禁用(`disable`)时才会调用，与上面刚好相反。
+在 `SETUP_DISABLED` 阶段调用。只有当模块被禁用(`disable`)时才会调用，与上面刚好相反。
 
 ```java
 	/**
@@ -134,7 +134,7 @@ public interface IForestryModule {
 	}
 ```
 
-用于注册物品和方块，它的执行在**林业加载阶段**的 `preInit` 之前，在上述两函数执行之后。
+在 `REGISTER` 阶段调用。用于注册物品和方块，它的执行在 `preInit` 之前，在上述两函数执行之后。
 
 ```java
 	/**
@@ -144,7 +144,7 @@ public interface IForestryModule {
 	}
 ```
 
-**林业加载阶段**的`preInit`阶段。
+在 `PRE_INIT` 阶段调用。
 
 ```java
 	/**
@@ -161,7 +161,7 @@ public interface IForestryModule {
 	}
 ```
 
-**林业加载阶段**的`Init`阶段。
+在 `INIT` 阶段调用。
 
 ```java
 	/**
@@ -171,7 +171,7 @@ public interface IForestryModule {
 	}
 ```
 
-用于注册合成，它的执行在**林业加载阶段**的 `doInit` 之前。
+在 `INIT` 阶段调用。用于注册合成，它的执行在 `doInit` 之前。
 
 ```java
 	default void addLootPoolNames(Set<String> lootPoolNames) {
@@ -185,7 +185,7 @@ public interface IForestryModule {
 	}
 ```
 
-**林业加载阶段**的`postInit`阶段。
+在 `POST_INIT` 阶段调用。
 
 ```java
 	@Nullable
