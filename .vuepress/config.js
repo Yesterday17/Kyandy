@@ -20,6 +20,7 @@ module.exports = {
         }
       }
     ],
+    require("./plugins/vuepress-plugin-heimu/index.js"),
     require("./plugins/vuepress-plugin-codeblock/src/index.js")
   ],
   theme: "kyandy",

@@ -1,0 +1,9 @@
+{
+  "name": "vuepress-plugin-heimu",
+  "version": "1.0.0",
+  "description": "Moegirlpedia-like heimu.",
+  "main": "index.js",
+  "repository": "https://github.com/Yesterday17/Kyandy/tree/master/.vuepress/plugins/vuepress-plugin-heimu",
+  "author": "Yesterday17",
+  "license": "MIT"
+}
