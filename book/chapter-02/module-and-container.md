@@ -8,6 +8,10 @@
 
 ~~话说是不是应该叫 `IModuleManagerContainer` ?~~
 
+<heimu>后来我发现如果要叫 IModuleManagerContainer 的话</heimu>
+
+<heimu>那现在的 ModuleManager 就要叫 ModuleManagerManager</heimu>
+
 ```java
 public interface IModuleContainer {
 	/**
