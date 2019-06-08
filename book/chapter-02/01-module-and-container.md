@@ -2,7 +2,7 @@
 
 模块是林业抽象中最基本的一环，而对模块的抽象则是基本中的基本。在这一章，我们将详细探讨林业对模块的抽象过程，以便在后文中更好地分析各个模块。
 
-## IModuleContainer
+## [IModuleContainer](/source/api/modules/IModuleContainer.html)
 
 `IModuleContainer` 位于 `forestry.api.modules` 下，其唯二的实现便是前文提到的模块与插件对应的类。在看 `Module` 本身之前，我们先来看一看这个接口：
 
@@ -53,3 +53,146 @@ public interface IModuleContainer {
 ```
 
 在配置完之后调用，通过阅读具体实现及调用可以发现是为了将通过运算得到的**需要加载**和**不需要加载**的模块存到对应的 `Set` 中。
+
+## [IForestryModule](/source/api/modules/IForestryModule.html)
+
+`IForestryModule`与 `IModuleContainer`位置相同，是对于林业中所有模块的基本抽象接口。
+
+```java
+/**
+ * Defines a Forestry module.
+ * Any class implementing this interface and annotated by {@link ForestryModule} to be loaded by
+ * the model manager of Forestry.
+ */
+public interface IForestryModule {
+	default boolean isAvailable() {
+		return true;
+	}
+```
+
+是否可用，默认为 `true`。
+
+```java
+	default boolean canBeDisabled() {
+		return true;
+	}
+```
+
+能否被禁用，诸如 `core` 之类的模块是不能禁用的。
+
+```java
+	default String getFailMessage() {
+		return "";
+	}
+```
+
+当且仅当上述的 `isAvailable` 返回 `false` 时在日志中输出的错误信息。
+
+```java
+	/**
+	 * The ForestryModule.moduleID()s of any other modules this module depends on.
+	 */
+	default Set<ResourceLocation> getDependencyUids() {
+		return Collections.emptySet();
+	}
+```
+
+获得该模块的依赖项。对于通常的林业模块而言，其依赖 `core` 模块（出自`BlankForestryModule`）。但对于诸如林业拓展，其可能会增加依赖自己 `Mod` 对应的 `core` 模块。
+
+```java
+	/**
+	 * Can be used to setup the api.
+	 * Will only be called if the module is active if not {@link #disabledSetupAPI()} will be called.
+	 * <p>
+	 * Must be called by the mod that registers the container.
+	 */
+	default void setupAPI() {
+	}
+```
+
+在 `preInit` 阶段调用的 `runSetup`，只有当模块未被禁用(`disable`)时才会调用，与下面刚好相反。
+
+```java
+	/**
+	 * Called to setup the api if this module is disabled in the config or has missing dependencies.
+	 * <p>
+	 * Must be called by the mod that registers the container.
+	 */
+	default void disabledSetupAPI() {
+	}
+```
+
+在**模组加载阶段** `preInit` 阶段调用的 `runSetup`，只有当模块被禁用(`disable`)时才会调用，与上面刚好相反。
+
+```java
+	/**
+	 * Can be used to register items and blocks. Called before {@link #preInit()}.
+	 * <p>
+	 * Must be called by the mod that registers the container.
+	 */
+	default void registerItemsAndBlocks() {
+	}
+```
+
+用于注册物品和方块，它的执行在**林业加载阶段**的 `preInit` 之前，在上述两函数执行之后。
+
+```java
+	/**
+	 * Must be called by the mod that registers the container.
+	 */
+	default void preInit() {
+	}
+```
+
+**林业加载阶段**的`preInit`阶段。
+
+```java
+	/**
+	 * Can be used to register Buildcraft triggers.
+	 */
+	default void registerTriggers() {
+	}
+```
+
+用于注册 `BuildCraft` 的 `trigger`，当且仅当 `BuildCraft` 存在（即 `BuildCraft` 兼容启用）时执行。笔者这里没有详细研究过。
+
+```java
+	default void doInit() {
+	}
+```
+
+**林业加载阶段**的`Init`阶段。
+
+```java
+	/**
+	 * Can be used to register recipes. Called after {@link #doInit()}.
+	 */
+	default void registerRecipes() {
+	}
+```
+
+用于注册合成，它的执行在**林业加载阶段**的 `doInit` 之前。
+
+```java
+	default void addLootPoolNames(Set<String> lootPoolNames) {
+	}
+```
+
+用于操纵 `LootTable`，该函数在 `LootTableLoadEvent` 触发时被调用。
+
+```java
+	default void postInit() {
+	}
+```
+
+**林业加载阶段**的`postInit`阶段。
+
+```java
+	@Nullable
+	default ICommand[] getConsoleCommands() {
+		return null;
+	}
+}
+```
+
+用于注册命令，因为可以没有命令所以可能为 `NULL`（也就是默认情况）。在 `FMLServerStartingEvent` 触发时调用。
