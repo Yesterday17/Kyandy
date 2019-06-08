@@ -10,7 +10,16 @@ module.exports = {
   plugins: [
     "@vuepress/back-to-top",
     "smooth-scroll",
-    ["@vuepress/pwa", { updatePopup: true }],
+    [
+      "@vuepress/pwa",
+      {
+        serviceWorker: true,
+        updatePopup: {
+          message: "发现新内容可用！",
+          buttonText: "刷新"
+        }
+      }
+    ],
     require("./plugins/vuepress-plugin-codeblock/src/index.js")
   ],
   theme: "kyandy",
