@@ -37,7 +37,7 @@ gradle idea -DsocksProxyHost=127.0.0.1 -DsocksProxyPort=1080
 
 建议听 [IM@S][imas-moegirlpedia] 的[歌单][imas-ml-songlist]，然后你就不想看了
 
-[imas-moegirlpedia]: https://zh.moegirl.org/%E5%81%B6%E5%83%8F%E5%A4%A7%E5%B8%88%E7%B3%BB%E5%88%97"
+[imas-moegirlpedia]: https://zh.moegirl.org/%E5%81%B6%E5%83%8F%E5%A4%A7%E5%B8%88%E7%B3%BB%E5%88%97
 [imas-ml-songlist]: http://music.163.com/m/playlist?id=50015591
 
 </black>
