@@ -48,11 +48,11 @@ forestry
    └─worktable
 ```
 
-## Module？Plugin？
+## Module? Plugin?
 
-从上面的目录结构来看，你可以看到同时存在的 `module` 和 `plugin`。那么这两者的关系究竟是什么呢？<black title="kora!">ならば、答えは一つ——</black>
+从上面的目录结构来看，你可以看到同时存在的 `module` 和 `plugin`。那么这两者的关系究竟是什么呢? <black title="kora!">ならば、答えは一つ——</black>
 
-其实某种意义上来说这个答案很讨巧。他们二者是既平级又有上下级的关系。具体体现在哪儿呢？我们首先来看 [ForestryModules][forestry-modules-forestrymodules-java]：
+其实某种意义上来说这个答案很讨巧。他们二者是既平级又有上下级的关系。具体体现在哪儿呢? 我们首先来看 [ForestryModules][forestry-modules-forestrymodules-java]：
 
 ```java {3}
 public class ForestryModules implements IModuleContainer {
@@ -70,7 +70,7 @@ public class ForestryCompatPlugins implements IModuleContainer {
 	public static final String ID = "forestry_compat";
 ```
 
-为什么说它们是平级呢？首先，它们都实现了 `IModuleContainer` 接口，并且它们对应的配置文件都是 `module.cfg`；而层级关系，则是出现在了上述代码中各自高亮的那一行——第三行。从第二行我们可以看出，二者是共用一个配置文件的，而从配置文件的层级来看，无疑是 `Module` 的层级更高。
+为什么说它们是平级呢? 首先，它们都实现了 `IModuleContainer` 接口，并且它们对应的配置文件都是 `module.cfg`；而层级关系，则是出现在了上述代码中各自高亮的那一行——第三行。从第二行我们可以看出，二者是共用一个配置文件的，而从配置文件的层级来看，无疑是 `Module` 的层级更高。
 
 ```properties {10, 83}
 # Configuration file
@@ -230,14 +230,14 @@ modules {
 
 而从事实上来看，这样的设计也是有道理的。`Plugin` 和 `Module` 的结构类似，但最大的不同在于 `Plugin` 其实很大程度上是**依赖** `Module` 的。
 
-`ForestryMC` 有哪些 `Plugin` 呢？从[这篇专栏][this-bilibili-cv]中可以了解一些<black>虽然有些信息不完整/过时了</black>。林业的 `Plugin` 其实就是**主动向其他 `Mod` 兼容**的一个手段。
+`ForestryMC` 有哪些 `Plugin` 呢? 从[这篇专栏][this-bilibili-cv]中可以了解一些<black>虽然有些信息不完整/过时了</black>。林业的 `Plugin` 其实就是**主动向其他 `Mod` 兼容**的一个手段。
 
 ::: warning
 **以下是私货。**
 
 我个人不喜欢这样的设计。
 
-我之前是这么考虑的，不应该是别的 `Mod` 来兼容林业吗？直到后来我看到了对 `TechReborn` 兼容的 `Plugin`。于是我明白了存在即合理。对于两个体量对等的 `Mod` 而言，究竟应该谁去兼容谁呢？
+我之前是这么考虑的，不应该是别的 `Mod` 来兼容林业吗? 直到后来我看到了对 `TechReborn` 兼容的 `Plugin`。于是我明白了存在即合理。对于两个体量对等的 `Mod` 而言，究竟应该谁去兼容谁呢?
 
 说句实话，我不知道。
 
