@@ -2,15 +2,15 @@
 
 模块是林业抽象中最基本的一环，而对模块的抽象则是基本中的基本。在这一章，我们将详细探讨林业对模块的抽象过程，以便在后文中更好地分析各个模块。
 
-## [IModuleContainer](/source/api/modules/IModuleContainer.html) (接口)
+## [IModuleContainer](/source/api/modules/IModuleContainer.html)
 
 `IModuleContainer` 位于 `forestry.api.modules` 下，其唯二的实现便是前文提到的模块与插件对应的类，也就是说，它是对于林业中所有 `ModuleManager` 的基本抽象接口。在看 `Module` 本身之前，我们先来看一看这个接口：
 
 ~~话说是不是应该叫 `IModuleManagerContainer` ?~~
 
-<heimu>后来我发现如果要叫 IModuleManagerContainer 的话</heimu>
+<black>后来我发现如果要叫 IModuleManagerContainer 的话</black>
 
-<heimu>那现在的 ModuleManager 就要叫 ModuleManagerManager</heimu>
+<black>那现在的 ModuleManager 就要叫 ModuleManagerManager</black>
 
 ```java
 public interface IModuleContainer {
@@ -54,7 +54,7 @@ public interface IModuleContainer {
 
 在配置完之后调用，通过阅读具体实现及调用可以发现是为了将通过运算得到的**需要加载**和**不需要加载**的模块存到对应的 `Set` 中。
 
-## [IForestryModule](/source/api/modules/IForestryModule.html) (接口)
+## [IForestryModule](/source/api/modules/IForestryModule.html)
 
 `IForestryModule`与 `IModuleContainer`位置相同，是对于林业中所有模块的基本抽象接口。
 
@@ -197,10 +197,10 @@ public interface IForestryModule {
 
 用于注册命令，因为可以没有命令所以可能为 `NULL`（也就是默认情况）。在 `FMLServerStartingEvent` 触发时调用。
 
-## [ForestryModule](/source/api/modules/ForestryModule.html) (注解)
+## [ForestryModule](/source/api/modules/ForestryModule.html)
 
 ForesryModule 是注解，它负责的是给林业的 Module 提供额外的信息。  
-在注释中，还特意强调了某<heimu>~~科学~~</heimu>不知名的命令 `/forestry module info ${moduleID}` 的存在。
+在注释中，还特意强调了某<black>~~科学~~</black>不知名的命令 `/forestry module info ${moduleID}` 的存在。
 
 ```java
 /**
@@ -211,8 +211,8 @@ ForesryModule 是注解，它负责的是给林业的 Module 提供额外的信�
  */
 ```
 
-<heimu title="问题">Q: 你发现 typo 了吗?</heimu>
-<heimu title="答案">A: model manager -> module manager</heimu>
+<black title="问题">Q: 你发现 typo 了吗?</black>
+<black title="答案">A: model manager -> module manager</black>
 
 这一部分的内容不详细分析了，有兴趣的读者可以自行点击上方标题阅读源码。
 
@@ -227,7 +227,7 @@ public interface IModuleManager {
 	}
 ```
 
-isModuleEnabled 这一方法对 ResourceLocation 的简化操作。<heimu title="让我看看你口腔发育正不正常啊！">张嘴吃糖！</heimu>
+isModuleEnabled 这一方法对 ResourceLocation 的简化操作。<black title="让我看看你口腔发育正不正常啊！">张嘴吃糖！</black>
 
 ```java
 	boolean isModuleEnabled(ResourceLocation id);

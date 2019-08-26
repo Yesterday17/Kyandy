@@ -1,8 +1,8 @@
 # 一些约定
 
-<heimu title="今夜もわたしとよう旗をあなたの心に立てて行きます！">やくそく、約束、お約束のコーナーです！</heimu>
+<black title="今夜もわたしとよう旗をあなたの心に立てて行きます！">やくそく、約束、お約束のコーナーです！</black>
 
-<heimu title="Catch The Rainbow! 発売中！">[《約束のアステリズム》 - 水瀬いのり][netease-music-yakusoku-no-asuterizumu]</heimu>
+<black title="Catch The Rainbow! 発売中！">[《約束のアステリズム》 - 水瀬いのり][netease-music-yakusoku-no-asuterizumu]</black>
 
 [netease-music-yakusoku-no-asuterizumu]: http://music.163.com/m/song?id=1357785356
 
