@@ -9,7 +9,7 @@ module.exports = {
   ],
   plugins: [
     '@vuepress/back-to-top',
-    'smooth-scroll',
+    // 'smooth-scroll',
     [
       '@vuepress/pwa',
       {
