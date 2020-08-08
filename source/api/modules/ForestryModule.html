@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ForestryModule.java | Kyandy</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="歩き出すんだ、自分の軌跡になるから、止まらない。">
+    <link rel="preload" href="/assets/css/0.styles.1e7700b1.css" as="style"><link rel="preload" href="/assets/js/app.e75c0cb1.js" as="script"><link rel="preload" href="/assets/js/5.9673c4c9.js" as="script"><link rel="preload" href="/assets/js/2.32ec2776.js" as="script"><link rel="preload" href="/assets/js/23.bdaeb703.js" as="script"><link rel="preload" href="/assets/js/3.d9d09990.js" as="script"><link rel="prefetch" href="/assets/js/10.8b09a056.js"><link rel="prefetch" href="/assets/js/11.d08ae994.js"><link rel="prefetch" href="/assets/js/12.d1671177.js"><link rel="prefetch" href="/assets/js/13.a6d64203.js"><link rel="prefetch" href="/assets/js/14.73212872.js"><link rel="prefetch" href="/assets/js/15.a7bcba7c.js"><link rel="prefetch" href="/assets/js/16.92e994da.js"><link rel="prefetch" href="/assets/js/17.988a19b3.js"><link rel="prefetch" href="/assets/js/18.80503c04.js"><link rel="prefetch" href="/assets/js/19.4b75980e.js"><link rel="prefetch" href="/assets/js/20.1cd74db6.js"><link rel="prefetch" href="/assets/js/21.a9a38733.js"><link rel="prefetch" href="/assets/js/22.9e55f3dc.js"><link rel="prefetch" href="/assets/js/24.0c8b2bc8.js"><link rel="prefetch" href="/assets/js/25.014bc46e.js"><link rel="prefetch" href="/assets/js/26.8508cb4d.js"><link rel="prefetch" href="/assets/js/27.4a0e3be0.js"><link rel="prefetch" href="/assets/js/28.11a74af4.js"><link rel="prefetch" href="/assets/js/29.9e3cf725.js"><link rel="prefetch" href="/assets/js/30.2eef4619.js"><link rel="prefetch" href="/assets/js/31.b6639dab.js"><link rel="prefetch" href="/assets/js/32.f67e1bd1.js"><link rel="prefetch" href="/assets/js/33.eb4db779.js"><link rel="prefetch" href="/assets/js/4.0e7cc7a7.js"><link rel="prefetch" href="/assets/js/6.cba7a4d4.js"><link rel="prefetch" href="/assets/js/7.dbfd5fa7.js"><link rel="prefetch" href="/assets/js/8.3a8c7722.js"><link rel="prefetch" href="/assets/js/9.0e7a77ef.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1e7700b1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Kyandy</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/book/" class="nav-link">
+  正文
+</a></div><div class="nav-item"><a href="/source/" class="nav-link router-link-active">
+  源码
+</a></div><div class="nav-item"><a href="https://harbinger.covertdragon.team/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Harbinger
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.yesterday17.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://mmf.moe/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MMF
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/Yesterday17/Kyandy" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/book/" class="nav-link">
+  正文
+</a></div><div class="nav-item"><a href="/source/" class="nav-link router-link-active">
+  源码
+</a></div><div class="nav-item"><a href="https://harbinger.covertdragon.team/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Harbinger
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.yesterday17.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://mmf.moe/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  MMF
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/Yesterday17/Kyandy" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/source/" aria-current="page" class="sidebar-link">关于源码</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>ForestryMC</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/source/Forestry.html" class="sidebar-link">Forestry.java</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>api/</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-2"><p class="sidebar-heading"><span>api/core/</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-2"><p class="sidebar-heading open"><span>api/modules/</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/source/api/modules/ForestryModule.html" aria-current="page" class="active sidebar-link">ForestryModule.java</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/source/api/modules/ForestryModule.html#源码" class="sidebar-link">源码</a></li><li class="sidebar-sub-header"><a href="/source/api/modules/ForestryModule.html#详解" class="sidebar-link">详解</a></li></ul></li><li><a href="/source/api/modules/IForestryModule.html" class="sidebar-link">IForestryModule.java</a></li><li><a href="/source/api/modules/IModuleContainer.html" class="sidebar-link">IModuleContainer.java</a></li><li><a href="/source/api/modules/IModuleManager.html" class="sidebar-link">IModuleManager.java</a></li></ul></section></li></ul></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>modules/</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading"><span>plugins/</span> <span class="arrow right"></span></p> <!----></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="forestrymodule-java"><a href="#forestrymodule-java" class="header-anchor">#</a> ForestryModule.java</h1> <h2 id="源码"><a href="#源码" class="header-anchor">#</a> 源码</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">/*******************************************************************************
+ * Copyright 2011-2014 SirSengir
+ *
+ * This work (the API) is licensed under the &quot;MIT&quot; License, see LICENSE.txt for details.
+ ******************************************************************************/</span>
+<span class="token keyword">package</span> <span class="token namespace">forestry<span class="token punctuation">.</span>api<span class="token punctuation">.</span>modules</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>annotation</span><span class="token punctuation">.</span><span class="token class-name">Retention</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>lang<span class="token punctuation">.</span>annotation</span><span class="token punctuation">.</span><span class="token class-name">RetentionPolicy</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Annotation to provide additional information on IForestryModules. This information will be available via the &quot;/forestry module info {@link #moduleID()}&quot; command ingame.
+ * Any class annotated by this and implementing {@link IForestryModule} will be loaded by the model manager of Forestry.
+ *
+ * @author Nedelosk
+ */</span>
+<span class="token annotation punctuation">@Retention</span><span class="token punctuation">(</span><span class="token class-name">RetentionPolicy</span><span class="token punctuation">.</span>RUNTIME<span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token annotation punctuation">@interface</span> <span class="token class-name">ForestryModule</span> <span class="token punctuation">{</span>
+
+	<span class="token comment">/**
+	 * @return Unique identifier for the module, no spaces!
+	 */</span>
+	<span class="token class-name">String</span> <span class="token function">moduleID</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * @return The unique identifier of the module container.
+	 */</span>
+	<span class="token class-name">String</span> <span class="token function">containerID</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * @return Nice and readable module name.
+	 */</span>
+	<span class="token class-name">String</span> <span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * @return ForestryModule author's name.
+	 */</span>
+	<span class="token class-name">String</span> <span class="token function">author</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">default</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * @return URL of plugin homepage.
+	 */</span>
+	<span class="token class-name">String</span> <span class="token function">url</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">default</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * @return Not used (yet?).
+	 */</span>
+	<span class="token class-name">String</span> <span class="token function">help</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">default</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * @return The name of the loot table file, if any.
+	 */</span>
+	<span class="token class-name">String</span> <span class="token function">lootTable</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">default</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * @return True if this is a core module.
+	 */</span>
+	<span class="token keyword">boolean</span> <span class="token function">coreModule</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">default</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * @return Version of the module, if any.
+	 */</span>
+	<span class="token class-name">String</span> <span class="token function">version</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">default</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+
+	<span class="token comment">/**
+	 * @return Localization key for a short description what the module does.
+	 */</span>
+	<span class="token class-name">String</span> <span class="token function">unlocalizedDescription</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">default</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br></div></div><h2 id="详解"><a href="#详解" class="header-anchor">#</a> 详解</h2> <p><a href="/book/chapter-02/01-module-and-container.html#forestrymodule">2.1 模块与 Container</a></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Yesterday17/Kyandy/edit/master/source/api/modules/ForestryModule.md" target="_blank" rel="noopener noreferrer">来帮忙吗?</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">8/26/2019, 12:05:33 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/source/api/core/ForestryAPI.html" class="prev">
+        ForestryAPI.java
+      </a></span> <span class="next"><a href="/source/api/modules/IForestryModule.html">
+        IForestryModule.java
+      </a>
+      →
+    </span></p></div> <a-player audio="[object Object]" lrcType="1" fixed="" autoplay="autoplay"></a-player></main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.e75c0cb1.js" defer></script><script src="/assets/js/5.9673c4c9.js" defer></script><script src="/assets/js/2.32ec2776.js" defer></script><script src="/assets/js/23.bdaeb703.js" defer></script><script src="/assets/js/3.d9d09990.js" defer></script>
+  </body>
+</html>
